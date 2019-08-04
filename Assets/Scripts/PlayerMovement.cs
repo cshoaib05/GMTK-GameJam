@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed;
     public float speed;
     public static int life;
-
+    public static bool die;
     public Rigidbody2D projectile;
     public GameObject bullet;
     public GameObject bulletposition;
@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        die = false;
         life = 1;
         bulletqueue = new Queue<Rigidbody2D>();    
     }
@@ -30,9 +31,7 @@ public class PlayerMovement : MonoBehaviour
             bulletinst.SetActive(false);
             projectile = bulletinst.gameObject.GetComponent<Rigidbody2D>();
             bulletqueue.Enqueue(projectile);
-        }
-
-       
+        } 
     }
 
     void FixedUpdate()
@@ -40,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
         transform.Rotate(0, 0, rotation);
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             Rigidbody2D bulletdeq = bulletqueue.Dequeue();
             bulletdeq.gameObject.SetActive(true );
@@ -48,7 +47,5 @@ public class PlayerMovement : MonoBehaviour
             bulletdeq.velocity = transform.TransformDirection(new Vector3(0, speed, 0));
             bulletqueue.Enqueue(bulletdeq);
         }
-
-
     }
 }

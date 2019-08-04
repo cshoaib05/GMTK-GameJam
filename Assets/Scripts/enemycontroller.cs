@@ -38,13 +38,13 @@ public class enemycontroller : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Uicontroller.wave==1)   {             if (Time.time % 5 > 0 && Time.time % 5 < 0.03) { spawnnerfun(); } }
-        if (Uicontroller.wave == 2) {          if (Time.time % 5 > 0 && Time.time % 5 < 0.035) { spawnnerfun(); } }
-        if (Uicontroller.wave == 3) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.04) { spawnnerfun(); } }
-        if (Uicontroller.wave == 4) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.045) { spawnnerfun(); } }
-        if (Uicontroller.wave == 5) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.05) { spawnnerfun(); } }
-        if (Uicontroller.wave == 6) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.055) { spawnnerfun(); } }
-        if (Uicontroller.wave == 7) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.06) { spawnnerfun(); } }
+        if (Uicontroller.wave==1)   {          if (Time.time % 5 > 0 && Time.time % 5 < 0.04) { spawnnerfun(); } }
+        if (Uicontroller.wave == 2) {          if (Time.time % 5 > 0 && Time.time % 5 < 0.05) { spawnnerfun(); } }
+        if (Uicontroller.wave == 3) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.06) { spawnnerfun(); } }
+        if (Uicontroller.wave == 4) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.07) { spawnnerfun(); } }
+        if (Uicontroller.wave == 5) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.08) { spawnnerfun(); } }
+        if (Uicontroller.wave == 6) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.09) { spawnnerfun(); } }
+        if (Uicontroller.wave == 7) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.1) { spawnnerfun(); } }
     }
 
     public void spawnnerfun()

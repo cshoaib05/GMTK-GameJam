@@ -97,8 +97,6 @@ MonoBehaviour:
   speed: 0
   player: {fileID: 6542715540429853305, guid: c1dead371cb3da748b35450c2aa2f19e, type: 3}
   life: 0
-  scoretext: {fileID: 0}
-  score: 0
 --- !u!70 &1365665785399102172
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
