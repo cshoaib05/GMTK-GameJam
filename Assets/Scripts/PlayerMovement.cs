@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float rotationSpeed;
     public float speed;
-
+    public static int life;
 
     public Rigidbody2D projectile;
     public GameObject bullet;
@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        life = 1;
         bulletqueue = new Queue<Rigidbody2D>();    
     }
 

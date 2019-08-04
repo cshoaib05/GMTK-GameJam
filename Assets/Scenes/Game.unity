@@ -158,13 +158,19 @@ MonoBehaviour:
   enemylist1:
   - enemyname: {fileID: 4571700439054693317, guid: 8f1339bc4f32c964591669ff5cbde1b0,
       type: 3}
-    lives: 1
+    lives: 2
   - enemyname: {fileID: 4571700439054693317, guid: ef7bf396a0794ba4a9c470050738fab0,
       type: 3}
-    lives: 2
+    lives: 4
   - enemyname: {fileID: 4571700439054693317, guid: 83445dad54962b042b76c0646e45bb7f,
       type: 3}
-    lives: 4
+    lives: 8
+  - enemyname: {fileID: 4571700439054693317, guid: 7c3e50fddfff50a4bb275ca7a4731a85,
+      type: 3}
+    lives: 16
+  - enemyname: {fileID: 4571700439054693317, guid: 09022c27cb43e274fac6da70099d2df1,
+      type: 3}
+    lives: 32
   spawnner:
   - {fileID: 817757733}
   - {fileID: 1504670837}

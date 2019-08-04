@@ -37,12 +37,14 @@ public class enemycontroller : MonoBehaviour
 
     void FixedUpdate()
     {
-   
-      if(Time.time%5 >0 && Time.time%5 <0.03)
-        {
-            spawnnerfun();
-        }
-        
+
+        if (Uicontroller.wave==1)   {             if (Time.time % 5 > 0 && Time.time % 5 < 0.03) { spawnnerfun(); } }
+        if (Uicontroller.wave == 2) {          if (Time.time % 5 > 0 && Time.time % 5 < 0.035) { spawnnerfun(); } }
+        if (Uicontroller.wave == 3) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.04) { spawnnerfun(); } }
+        if (Uicontroller.wave == 4) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.045) { spawnnerfun(); } }
+        if (Uicontroller.wave == 5) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.05) { spawnnerfun(); } }
+        if (Uicontroller.wave == 6) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.055) { spawnnerfun(); } }
+        if (Uicontroller.wave == 7) {         if (Time.time % 5 > 0 && Time.time % 5 < 0.06) { spawnnerfun(); } }
     }
 
     public void spawnnerfun()
@@ -51,11 +53,23 @@ public class enemycontroller : MonoBehaviour
 
         if (Time.time<60f)
         {
-          randobj = Random.Range(1, 3);
+          randobj = Random.Range(1, 2);
         }
         if (Time.time>60f && Time.time <120f)
         {
+            randobj = Random.Range(1, 3);
+        }
+        if (Time.time>120f && Time.time <180f)
+        {
             randobj = Random.Range(1, 4);
+        }
+        if (Time.time>180f && Time.time <240f)
+        {
+            randobj = Random.Range(1, 5);
+        }
+        if (Time.time>240f && Time.time <300f)
+        {
+            randobj = Random.Range(1,6);
         }
 
 
