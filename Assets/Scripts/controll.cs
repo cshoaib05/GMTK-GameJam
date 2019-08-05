@@ -39,7 +39,7 @@ public class controll : MonoBehaviour
 
     public void loadscene()
     {
-        StartCoroutine(asloadasync(0));
+        StartCoroutine(asloadasync(1));
         Time.timeScale = 1;
     }
 
